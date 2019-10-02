@@ -2,6 +2,7 @@
 #include <stdio.h>
 int ispositive(int n);
 int mph_to_kph(int n);
+int c_to_f(int n);
 int main()
 {
     int r =0;
@@ -28,4 +29,12 @@ int mph_to_kph(int n )
         return r;
     }
 }
+int c_to_f(int n)
+{
+    if(ispositive(n))
+    {
+    return ((n*1.8)+32);
+    }
+}
+
 
