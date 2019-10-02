@@ -1,4 +1,11 @@
+/*
+Carlos Davila
+1561932 
+This programmage ask the user to make a choice , after it will take the user input and converit to what the user choices
 
+
+
+*/
 #include <stdio.h>
 int ispositive(int n);
 int mph_to_kph(int n);
@@ -14,14 +21,14 @@ int main()
        printf("Please enter miles ");
        scanf("%d",&input1);
        printf("its %d kph \n",mph_to_kph(input1));
-       main();
+       main(); /// calls it self
    }else if(user_input ==2)
    {
         int input1 =0;
         printf("Please enter tempeture in C \n ");
         scanf("%d",&input1);
         printf("its %d f \n",c_to_f(input1));
-        main();
+        main();// calls its self
    }else
    {
        
