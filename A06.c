@@ -45,12 +45,10 @@ int mph_to_kph(int n )
     int r =-1;
     if(ispositive(n))
     {
-        r= (int)n * 1.609344 ;
-        return r;
-    }else
-    {
-        return r;
+        r= n * 1.609344 ;
     }
+    return r;
+    
 }
 int c_to_f(int n)
 {
