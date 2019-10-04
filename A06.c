@@ -15,24 +15,30 @@ int main()
     int user_input =0;
    printf("Please make pick a number 1. Convert speed, 2. Convert temperature, 3. Exit. \n");
    scanf("%d",&user_input);
-   if(user_input ==1)
-   {
-       int input1 =0;
-       printf("Please enter miles ");
-       scanf("%d",&input1);
-       printf("its %d kph \n",mph_to_kph(input1));
-       main(); /// calls it self
-   }else if(user_input ==2)
-   {
-        int input1 =0;
-        printf("Please enter tempeture in C \n ");
-        scanf("%d",&input1);
-        printf("its %d f \n",c_to_f(input1));
-        main();// calls its self
-   }else
-   {
-       
-   }
+     while (user_input != 3)
+    {
+
+      int input1 = 0;
+      if (user_input == 1)
+	{
+
+	  printf ("Please enter miles \n");
+	  scanf ("%d", &input1);
+	  printf ("its %d kph \n", mph_to_kph (input1));
+	}
+      else if (user_input == 2)
+	{
+	  printf ("Please enter tempeture in C \n ");
+	  scanf ("%d", &input1);
+	  printf ("its %d f \n", c_to_f (input1));
+
+	}
+      printf
+	("Please make pick a number 1. Convert speed, 2. Convert temperature, 3. Exit. \n");
+      scanf ("%d", &user_input);
+    }
+    printf("Bye");
+
 }
 
 
@@ -52,10 +58,9 @@ int mph_to_kph(int n )
 }
 int c_to_f(int n)
 {
-    if(ispositive(n))
-    {
-    return ((n*1.8)+32);
-    }
+    
+   return ((n*1.8)+32);
+
 }
 
 
